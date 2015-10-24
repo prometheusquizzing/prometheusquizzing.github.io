@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prometheus Quizzing</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}" >
+		
+	</head>
+
+	<body>
+		<div id="wrapper">
+		<header>
+			<table>
+			<tr>
+			<td id="titleArea">
+			<div class="title" id="headArea">
+				<h3 id="title"><span style="color:green">P</span>rometheus <span style="color:green">Q</span>uizzing</h3>			
+			</div>
+			</td>
+			<td id="homeArea">
+			<div id="home" class="menuitem">
+				<a href="/home">HOME</a>
+			</div>
+			</td>
+			<td id="archiveArea">
+			<div id="archive" class="menuitem">
+				<a href="{{ url_for('.archive') }}">ARCHIVE</a>
+			</div>
+			</td>
+			<td id="contactArea">
+			<div id="contact" class="menuitem">
+				<a href="#">CONTACT</a>
+			</div>
+			</td>
+			<td id="aboutusArea">
+			<div id="aboutus" class="menuitem">
+				<a href="{{ url_for('.aboutUs') }}">ABOUT US</a>
+			</div>
+			</td>
+			</tr>
+			</table>
+		</header>
+		<div id="contentArea">
+		{% block content %}
+		{% endblock %}
+		</div>
+		</div>
+	</body>
+
+</html>

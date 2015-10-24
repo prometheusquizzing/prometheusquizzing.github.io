@@ -1,0 +1,28 @@
+body{background-color:#FFF;
+font-family:"Helvetica Neue";
+}
+
+#wrapper{
+width:100%;
+height:100%;}
+
+#head{width:100%;
+height:50px;
+border-bottom:solid 1px #d3d3d3;
+}
+
+#lyric{
+	text-align:center;
+	font-size:2em;
+	margin-top:120px;
+}
+
+#generate{
+text-align:center;
+font-size:1em;
+margin-top:200px;
+}
+
+#generate a{
+	text-decoration:none;
+}
