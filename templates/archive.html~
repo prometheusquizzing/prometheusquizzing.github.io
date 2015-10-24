@@ -1,7 +1,0 @@
-{% extends "home.html" %}
-
-{% block content %}
-	<p>You can find our past quizzes in this Google Drive folder</p>
-	<br>
-	<a href="https://drive.google.com/folderview?id=0B2mn7vNZqWIVdE1lQUF3V0Nza00&usp=sharing">File</a>
-{% endblock  %}
