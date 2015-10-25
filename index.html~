@@ -83,7 +83,7 @@
 				});
 
 				$("#arch").on("click",function(){
-					$("#archContentArea").show("slow");
+					$("#archContentArea").show();
 					$("#aboutContentArea").hide();
 					$("#contactContentArea").hide();
 					$("#homeContentArea").hide();
@@ -92,7 +92,7 @@
 
 				$("#about").on("click",function(){
 					$("#archContentArea").hide();
-					$("#aboutContentArea").show("slow");
+					$("#aboutContentArea").show();
 					$("#contactContentArea").hide();
 					$("#homeContentArea").hide();
 				});

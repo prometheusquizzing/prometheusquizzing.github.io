@@ -2,13 +2,16 @@
 #wrapper,body{
 position:absolute;
 height:100%;
-width:100%;
+width:61%;
 padding:0;
 	margin:0;
+padding-left:130px;
+padding-right:100px;
 }
 
 
 header {
+	
 	font-weight:normal;
 	height:60px;
 	width:100%;
@@ -19,6 +22,7 @@ header {
 	margin-top:0px;
 	margin-bottom:0px;
 	border-bottom:0.5px solid green;
+	padding-right:100px;
 	
 }
 
@@ -77,12 +81,18 @@ h3{
 	margin-left:2px;	
 }
 
-#contentArea{
+.contentArea{
 font-family:Roboto;
 position:relative;
-float:center;
-padding-left:200px;
-padding-right:200px;
+float:left;
+padding-left:10px;
+padding-right:40px;
+padding-top:10px;
 text-align:justify;
 font-size:22px;
+}
+
+.contentArea h2{
+	font-size:38px;
+	font-weight:100;
 }

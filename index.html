@@ -4,6 +4,8 @@
 		<title>Prometheus Quizzing</title>
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.css" >
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		
 		
 	</head>
 
@@ -19,32 +21,82 @@
 			</td>
 			<td id="homeArea">
 			<div id="home" class="menuitem">
-				<a href="/home">HOME</a>
+				<a id="homeLnk" href="#">HOME</a>
 			</div>
 			</td>
 			<td id="archiveArea">
-			<div id="archive" class="menuitem">
-				<a href="archive.html">ARCHIVE</a>
+			<div id="archive" class="menuitem" >
+				<a id="arch" href="#">ARCHIVE</a>
 			</div>
 			</td>
 			<td id="contactArea">
 			<div id="contact" class="menuitem">
-				<a href="#">CONTACT</a>
+				<a href="#" id="contactLnk">CONTACT</a>
 			</div>
 			</td>
 			<td id="aboutusArea">
 			<div id="aboutus" class="menuitem">
-				<a href="aboutus.html">ABOUT US</a>
+				<a href="#" id="about">ABOUT US</a>
 			</div>
 			</td>
 			</tr>
 			</table>
 		</header>
-		<div id="contentArea">
-		{% block content %}
-		{% endblock %}
+		<div id="homeContentArea" class="contentArea">
+		<h2>Home</h2>
+		</div>
+		<div id="contactContentArea" class="contentArea">
+		contact
+		</div>
+		<div id="archContentArea" class="contentArea">
+		archive
+		</div>
+		<div id="aboutContentArea" class="contentArea">
+		about
 		</div>
 		</div>
 	</body>
+
+		<script>
+			$(document).ready(
+				
+				function(){
+				$("#archContentArea").hide();
+				$("#aboutContentArea").hide();
+				$("#contactContentArea").hide();
+				$("#homeContentArea").show();
+				
+				$("#homeLnk").on("click",function(){
+					$("#archContentArea").hide();
+					$("#aboutContentArea").hide();
+					$("#contactContentArea").hide();
+					$("#homeContentArea").show();
+
+				});
+				
+				$("#contactLnk").on("click",function(){
+					$("#archContentArea").hide();
+					$("#aboutContentArea").hide();
+					$("#contactContentArea").show();
+					$("#homeContentArea").hide();
+
+				});
+
+				$("#arch").on("click",function(){
+					$("#archContentArea").show();
+					$("#aboutContentArea").hide();
+					$("#contactContentArea").hide();
+					$("#homeContentArea").hide();
+
+				});
+
+				$("#about").on("click",function(){
+					$("#archContentArea").hide();
+					$("#aboutContentArea").show();
+					$("#contactContentArea").hide();
+					$("#homeContentArea").hide();
+				});
+			});
+		</script>
 
 </html>
