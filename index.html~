@@ -43,7 +43,7 @@
 			</table>
 		</header>
 		<div id="homeContentArea" class="contentArea">
-		Home
+		<h2>Home</h2>
 		</div>
 		<div id="contactContentArea" class="contentArea">
 		contact

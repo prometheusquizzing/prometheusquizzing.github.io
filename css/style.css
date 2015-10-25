@@ -91,9 +91,12 @@ padding-right:40px;
 padding-top:10px;
 text-align:justify;
 font-size:22px;
+color:#212121;
+
 }
 
 .contentArea h2{
 	font-size:38px;
-	font-weight:100;
+	font-weight:200;
+	color:#616161;
 }
